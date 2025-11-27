@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UniDrop - Download Beta</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="https://getunidrop.app/assets/images/favicon-32x32.png">
+
+    <style>
+        /* CSS Invariato */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background: linear-gradient(135deg, #0a0f1e 0%, #1a1f2e 100%);
+            color: #E2E8F0;
+            padding: 40px 20px;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            background: linear-gradient(135deg, #00F2EA 0%, #00BFA5 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .subtitle {
+            text-align: center;
+            font-size: 1.2rem;
+            color: #a0aec0;
+            margin-bottom: 3rem;
+        }
+
+        .download-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 24px;
+            margin-bottom: 3rem;
+        }
+
+        .download-card {
+            background: rgba(45, 55, 72, 0.3);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 16px;
+            padding: 32px 24px;
+            text-align: center;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .download-card:hover {
+            transform: translateY(-8px);
+            border-color: #00F2EA;
+            box-shadow: 0 10px 30px rgba(0, 242, 234, 0.1);
+        }
+
+        .status-badge {
+            position: absolute;
+            top: 12px;
+            right: 12px;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .status-beta { background: #f59e0b; color: #1a202c; }
+
+        .platform-icon {
+            font-size: 2.5rem;
+            margin-bottom: 16px;
+        }
+
+        .platform-name {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 8px;
+            color: #fff;
+        }
+
+        .platform-desc {
+            font-size: 0.9rem;
+            color: #a0aec0;
+            margin-bottom: 24px;
+            min-height: 40px;
+            flex-grow: 1;
+        }
+
+        .download-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            padding: 12px 24px;
+            border-radius: 8px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            width: 100%;
+            margin-bottom: 8px;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, #00F2EA 0%, #00BFA5 100%);
+            color: #000;
+        }
+
+        .btn-primary:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 20px rgba(0, 242, 234, 0.3);
+        }
+
+        .download-info {
+            font-size: 0.8rem;
+            color: #718096;
+            margin-top: 8px;
+        }
+
+        .beta-instructions {
+            text-align: left;
+            padding: 24px;
+            background: rgba(99, 102, 241, 0.1);
+            border: 1px solid rgba(99, 102, 241, 0.3);
+            border-radius: 12px;
+            margin-top: 2rem;
+        }
+
+        .beta-instructions h3 {
+            color: #818cf8;
+            margin-bottom: 12px;
+            font-size: 1.2rem;
+        }
+
+        .beta-instructions p {
+            color: #a0aec0;
+            margin-bottom: 12px;
+        }
+        
+        .beta-instructions a {
+            color: #00F2EA;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .beta-instructions a:hover {
+            text-decoration: underline;
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 4rem;
+            color: #718096;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 768px) {
+            h1 { font-size: 2.5rem; }
+            .download-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Download UniDrop</h1>
+        <p class="subtitle">Universal file sharing for all your devices. Welcome to the beta!</p>
+
+        <div class="download-grid">
+            
+            <!-- ANDROID -->
+            <div class="download-card">
+                <span class="status-badge status-beta">Beta</span>
+                <div class="platform-icon">🤖</div>
+                <h3 class="platform-name">Android</h3>
+                <p class="platform-desc">For phones and tablets running Android 7.0 or newer.</p>
+                <a href="https://groups.google.com/g/unidrop-beta-tester" target="_blank" class="download-btn btn-primary">Step 1: Join Testers Group</a>
+                <a href="https://play.google.com/apps/testing/com.getunidrop.app" target="_blank" class="download-btn btn-primary">Step 2: Get on Google Play</a>
+                <p class="download-info">You must join the group first.</p>
+            </div>
+            
+            <!-- iOS & iPadOS -->
+            <div class="download-card">
+                <span class="status-badge status-beta">Beta</span>
+                <div class="platform-icon">📱</div>
+                <h3 class="platform-name">iPhone & iPad</h3>
+                <p class="platform-desc">For devices running iOS 14.0 or newer. Requires the TestFlight app.</p>
+                <a href="https://testflight.apple.com/join/ecpfHy49" target="_blank" class="download-btn btn-primary">Join Beta on TestFlight</a>
+                <p class="download-info">Installs via Apple's TestFlight app.</p>
+            </div>
+
+            <!-- WINDOWS -->
+            <div class="download-card">
+                <span class="status-badge status-beta">Beta</span>
+                <div class="platform-icon">🪟</div>
+                <h3 class="platform-name">Windows</h3>
+                <p class="platform-desc">For Windows 10 & 11, available directly from the Microsoft Store.</p>
+                <a href="https://apps.microsoft.com/detail/9P55D07BFDGP" class="download-btn btn-primary">Get from Microsoft Store</a>
+                <p class="download-info">Version 1.0.0 (Beta)</p>
+            </div>
+
+            <!-- macOS -->
+            <div class="download-card">
+                <span class="status-badge status-beta">Beta</span>
+                <div class="platform-icon">💻</div>
+                <h3 class="platform-name">macOS</h3>
+                <p class="platform-desc">For Macs running macOS 11.0 or newer. Requires the TestFlight app.</p>
+                <a href="https://testflight.apple.com/join/ecpfHy49" target="_blank" class="download-btn btn-primary">Join Beta on TestFlight</a>
+                <p class="download-info">Installs via Apple's TestFlight app.</p>
+            </div>
+
+        </div>
+
+        <!-- SEZIONE ISTRUZIONI BETA -->
+        <div class="beta-instructions">
+            <h3>How to Join the Beta</h3>
+            <p>
+                <strong>Android:</strong> It's a two-step process. First, join our official <a href="[INSERISCI QUI IL LINK DEL GOOGLE GRUPPO]">Google Group</a>. Then, use the second link to opt-in and download the app from the Play Store. It may take a few minutes for access to be granted.
+            </p>
+            <p>
+                <strong>iPhone, iPad & Mac:</strong> Our Apple beta is distributed via TestFlight. You will need to install Apple's <a href="https://apps.apple.com/us/app/testflight/id899247664" target="_blank">TestFlight app</a> from the App Store on your device before you can install UniDrop. The same link works for iOS and macOS.
+            </p>
+            <p>
+                <strong>Windows:</strong> Simply click the link to go to a private Microsoft Store page and install the app directly.
+            </p>
+        </div>
+        
+        <footer>
+            <p>&copy; 2025 getunidrop.app</p>
+        </footer>
+
+    </div>
+</body>
+</html>
