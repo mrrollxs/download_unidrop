@@ -3,12 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UniDrop - Download Beta</title>
+    <title>UniDrop - Download</title> 
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="https://getunidrop.app/assets/images/favicon-32x32.png">
 
     <style>
-        /* CSS Invariato */
         * { margin: 0; padding: 0; box-sizing: border-box; }
         
         body {
@@ -133,14 +132,14 @@
         .beta-instructions {
             text-align: left;
             padding: 24px;
-            background: rgba(99, 102, 241, 0.1);
-            border: 1px solid rgba(99, 102, 241, 0.3);
+            background: rgba(245, 158, 11, 0.1); 
+            border: 1px solid rgba(245, 158, 11, 0.3);
             border-radius: 12px;
             margin-top: 2rem;
         }
 
         .beta-instructions h3 {
-            color: #818cf8;
+            color: #f59e0b;
             margin-bottom: 12px;
             font-size: 1.2rem;
         }
@@ -176,64 +175,61 @@
 <body>
     <div class="container">
         <h1>Download UniDrop</h1>
-        <p class="subtitle">Universal file sharing for all your devices. Welcome to the beta!</p>
+        <p class="subtitle">Universal file sharing for all your devices.</p>
 
         <div class="download-grid">
             
-            <!-- ANDROID -->
-            <div class="download-card">
-                <span class="status-badge status-beta">Beta</span>
-                <div class="platform-icon">🤖</div>
-                <h3 class="platform-name">Android</h3>
-                <p class="platform-desc">For phones and tablets running Android 7.0 or newer.</p>
-                <a href="https://groups.google.com/g/unidrop-beta-tester" target="_blank" class="download-btn btn-primary">Step 1: Join Testers Group</a>
-                <a href="https://play.google.com/apps/testing/com.getunidrop.app" target="_blank" class="download-btn btn-primary">Step 2: Get on Google Play</a>
-                <p class="download-info">You must join the group first.</p>
-            </div>
-            
             <!-- iOS & iPadOS -->
             <div class="download-card">
-                <span class="status-badge status-beta">Beta</span>
                 <div class="platform-icon">📱</div>
                 <h3 class="platform-name">iPhone & iPad</h3>
-                <p class="platform-desc">For devices running iOS 14.0 or newer. Requires the TestFlight app.</p>
-                <a href="https://testflight.apple.com/join/ecpfHy49" target="_blank" class="download-btn btn-primary">Join Beta on TestFlight</a>
-                <p class="download-info">Installs via Apple's TestFlight app.</p>
+                <p class="platform-desc">For devices running iOS 14.0 or newer. Available on the App Store.</p>
+                <a href="[INSERISCI QUI IL TUO LINK APP STORE PER iOS]" target="_blank" class="download-btn btn-primary">Download on the App Store</a>
+                <p class="download-info">Version 1.0</p>
             </div>
-
+            
+            <!-- macOS -->
+            <div class="download-card">
+                <div class="platform-icon">💻</div>
+                <h3 class="platform-name">macOS</h3>
+                <p class="platform-desc">For Macs with Intel or Apple Silicon chips running macOS 11.0 or newer.</p>
+                <a href="[INSERISCI QUI IL TUO LINK APP STORE PER macOS]" target="_blank" class="download-btn btn-primary">Download on the Mac App Store</a>
+                <p class="download-info">Version 1.0</p>
+            </div>
+            
             <!-- WINDOWS -->
             <div class="download-card">
-                <span class="status-badge status-beta">Beta</span>
                 <div class="platform-icon">🪟</div>
                 <h3 class="platform-name">Windows</h3>
                 <p class="platform-desc">For Windows 10 & 11, available directly from the Microsoft Store.</p>
-                <a href="https://apps.microsoft.com/detail/9P55D07BFDGP" class="download-btn btn-primary">Get from Microsoft Store</a>
-                <p class="download-info">Version 1.0.0 (Beta)</p>
+                <a href="https://apps.microsoft.com/detail/9P55D07BFDGP" class="download-btn btn-primary">Get it from Microsoft</a>
+                <p class="download-info">Version 1.0</p>
             </div>
 
-            <!-- macOS -->
+            <!-- ANDROID -->
             <div class="download-card">
-                <span class="status-badge status-beta">Beta</span>
-                <div class="platform-icon">💻</div>
-                <h3 class="platform-name">macOS</h3>
-                <p class="platform-desc">For Macs running macOS 11.0 or newer. Requires the TestFlight app.</p>
-                <a href="https://testflight.apple.com/join/ecpfHy49" target="_blank" class="download-btn btn-primary">Join Beta on TestFlight</a>
-                <p class="download-info">Installs via Apple's TestFlight app.</p>
+                <span class="status-badge status-beta">Public Beta</span>
+                <div class="platform-icon">🤖</div>
+                <h3 class="platform-name">Android</h3>
+                <p class="platform-desc">The Android version is in public beta. Your feedback is welcome!</p>
+                <a href="https://groups.google.com/g/unidrop-beta-tester" target="_blank" class="download-btn btn-primary">Step 1: Join Beta Group</a>
+                <a href="https://play.google.com/apps/testing/com.getunidrop.app" target="_blank" class="download-btn btn-primary">Step 2: Get on Google Play</a>
+                <p class="download-info">Requires joining the testing program.</p>
             </div>
 
         </div>
 
-        <!-- SEZIONE ISTRUZIONI BETA -->
+        <!-- SEZIONE ISTRUZIONI BETA (SOLO PER ANDROID) -->
         <div class="beta-instructions">
-            <h3>How to Join the Beta</h3>
+            <h3>How to Join the Android Beta</h3>
             <p>
-                <strong>Android:</strong> It's a two-step process. First, join our official <a href="https://groups.google.com/g/unidrop-beta-tester">Google Group</a>. Then, use the second link to opt-in and download the app from the Play Store. It may take a few minutes for access to be granted.
+                Our Android app is currently in a public beta phase while we finalize testing. To install it, you'll need to follow a two-step process:
             </p>
             <p>
-                <strong>iPhone, iPad & Mac:</strong> Our Apple beta is distributed via TestFlight. You will need to install Apple's <a href="https://apps.apple.com/us/app/testflight/id899247664" target="_blank">TestFlight app</a> from the App Store on your device before you can install UniDrop. The same link works for iOS and macOS.
+                <strong>1. Join our official <a href="https://groups.google.com/g/unidrop-beta-tester">Google Group</a>.</strong> After you join, it may take a few minutes for your account to be granted access.
             </p>
             <p>
-                <strong>Windows:</strong> Simply click the link to go to a private Microsoft Store page and install the app directly.
+                <strong>2. Use the "Get on Google Play" link</strong> to opt-in to the test and download the app from the Play Store.
             </p>
         </div>
         
@@ -244,4 +240,3 @@
     </div>
 </body>
 </html>
-
